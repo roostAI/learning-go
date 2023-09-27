@@ -9,6 +9,8 @@ import (
 
 func TestFastPowering_be2e642e07(t *testing.T) {
 
+	// Existing Test Cases
+
 	// Test Case 1: Testing with base as 2 and power as 3. Expected result is 8
 	result := fastPowering(2, 3)
 	if result != 8 {
@@ -56,5 +58,15 @@ func TestFastPowering_be2e642e07(t *testing.T) {
 		t.Error("Test Case 6 Failed: Expected", expected, "got ", result)
 	} else {
 		t.Log("Test Case 6 Passed: Expected", expected, "got ", result)
+	}
+
+	// New Test Case
+
+	// Test Case 7: Testing with base as 3 and power as 2. Expected result is 9
+	result = fastPowering(3, 2)
+	if result != 9 {
+		t.Error("Test Case 7 Failed: Expected 9, got ", result)
+	} else {
+		t.Log("Test Case 7 Passed: Expected 9, got ", result)
 	}
 }

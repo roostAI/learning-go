@@ -61,4 +61,15 @@ func TestGCD_ab1c91475d(t *testing.T) {
 			t.Logf("Success: GCD(%d, %d) = %d", a, b, got)
 		}
 	})
+
+	t.Run("test6: b is zero", func(t *testing.T) {
+		a, b := 7, 0
+		expected := 7
+		got := GCD(a, b)
+		if got != expected {
+			t.Errorf("GCD(%d, %d) = %d; want %d", a, b, got, expected)
+		} else {
+			t.Logf("Success: GCD(%d, %d) = %d", a, b, got)
+		}
+	})
 }

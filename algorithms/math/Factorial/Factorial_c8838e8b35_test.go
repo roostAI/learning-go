@@ -18,6 +18,7 @@ func TestFactorial_c8838e8b35(t *testing.T) {
 		{4, 24},
 		{5, 120},
 		{-1, 1}, // Factorial of negative numbers is not defined, but our function returns 1
+		{6, 720}, // Added new test case
 	}
 
 	for _, tc := range testCases {

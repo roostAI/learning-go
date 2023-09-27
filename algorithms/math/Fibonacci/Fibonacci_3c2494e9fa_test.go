@@ -32,6 +32,16 @@ func TestFibonacci_3c2494e9fa(t *testing.T) {
 			input:    -5,
 			expected: 0,
 		},
+		{
+			name:     "Test Case 5: Fibonacci of 1",
+			input:    1,
+			expected: 1,
+		},
+		{
+			name:     "Test Case 6: Fibonacci of 2",
+			input:    2,
+			expected: 1,
+		},
 	}
 
 	for _, tc := range testCases {

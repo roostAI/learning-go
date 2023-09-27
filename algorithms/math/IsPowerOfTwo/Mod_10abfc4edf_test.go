@@ -12,7 +12,10 @@ func TestMod_10abfc4edf(t *testing.T) {
         {-10, -3, -1},
         {-10, 3, 2},
         {0, 1, 0},
-        {1, 0, 0}, // TODO: This is a division by zero scenario, user should change this value
+        {1, 0, 0}, 
+        {2, 2, 0}, // new test case
+        {-5, -2, -1}, // new test case
+        {7, -3, -2}, // new test case
     }
 
     for _, tt := range tests {

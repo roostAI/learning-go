@@ -16,6 +16,17 @@ func TestIsPowerOfTwoBitwise_e8104160a5(t *testing.T) {
 		{num: 1, expected: true},
 		{num: 0, expected: true},
 		{num: -1, expected: false},
+		{num: 2, expected: true},
+		{num: 3, expected: false},
+		{num: 4, expected: true},
+		{num: 5, expected: false},
+		{num: 1024, expected: true},
+		{num: 2048, expected: true},
+		{num: 4096, expected: true},
+		{num: 8192, expected: true},
+		{num: 16384, expected: true},
+		{num: 32768, expected: true},
+		{num: 65536, expected: true},
 	}
 
 	for _, tc := range testCases {
