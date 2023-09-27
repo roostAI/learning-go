@@ -36,4 +36,14 @@ func TestFactorialRecursive_178a7b8974(t *testing.T) {
 	} else {
 		t.Logf("Test case 3 success, expected: %d, got: %d", expectedResult, result)
 	}
+
+	// Test case 4: Testing with a large positive number
+	num = 10
+	expectedResult = 3628800
+	result = FactorialRecursive(num)
+	if result != expectedResult {
+		t.Errorf("Test case 4 failed, expected: %d, got: %d", expectedResult, result)
+	} else {
+		t.Logf("Test case 4 success, expected: %d, got: %d", expectedResult, result)
+	}
 }

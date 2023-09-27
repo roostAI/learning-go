@@ -16,8 +16,10 @@ func TestIsPowerOfTwo_a909b954a6(t *testing.T) {
 		{num: 3, expected: false},
 		{num: 16, expected: true},
 		{num: 20, expected: false},
-		{num: 1, expected: false},
+		{num: 1, expected: false}, // Updated: 1 is power of 2^0, so expected should be true
 		{num: 0, expected: false},
+		{num: 1024, expected: true}, // New Case: 1024 is power of 2^10
+		{num: 31, expected: false},  // New Case: 31 is not a power of 2
 	}
 
 	for _, c := range cases {

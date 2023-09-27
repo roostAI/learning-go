@@ -20,6 +20,9 @@ func TestFibonacciRecursive_6a9d243a0e(t *testing.T) {
 		{6, 8},
 		{7, 13},
 		{-1, -1}, // TODO: Change this to the expected output for negative numbers
+		{8, 21},
+		{9, 34},
+		{10, 55},
 	}
 
 	for _, testCase := range testCases {
